@@ -22,7 +22,7 @@ void unevensum(int[] element)
     int sum = 0;
     for (int i = 0; i < element.Length; i++)
     {
-        if(i % 2 != 0)
+        if(i % 2 == 0)
         {
             sum += element[i];
         }
@@ -30,7 +30,7 @@ void unevensum(int[] element)
     Console.WriteLine($"Сумма чисел одномерного массива стоящих на нечетной позиции будет равна {sum} !");
 }
 
-int[] array = new int[15];
+int[] array = new int[10];
 fillarray(array);
 printarray(array);
 Console.WriteLine("");
