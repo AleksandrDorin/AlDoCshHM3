@@ -2,11 +2,11 @@
 
 void fillarray(int[] array)
 {
-    Console.WriteLine("Введите масмимальное значение массива: ");
+    Console.WriteLine("Введите максмимальное значение массива: ");
     int max = int.Parse(Console.ReadLine());
     Console.WriteLine("Введите минимальное значение массива: ");
     int min = int.Parse(Console.ReadLine());
-    
+
     var random = new Random();
     for (int i = 0; i < array.Length; i++)
     {
