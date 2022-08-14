@@ -31,7 +31,7 @@ void findelement(int[] element)
 }
 
 
-int[] array = new int[15];
+int[] array = new int[123];
 fillarray(array);
 printarray(array);
 Console.WriteLine("");
