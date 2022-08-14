@@ -31,7 +31,7 @@ void findsum(int[] array)
         sum += array[i];
         i++;
     }
-    Console.WriteLine($"Сумма элементов равна = {sum}");
+    Console.WriteLine($"Сумма элементов равна {sum}");
 }
 int[] array = new int[12];
 fillarray(array);
