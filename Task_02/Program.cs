@@ -6,7 +6,7 @@ void fillarray(int[] num)
     int i = 0;
     while (i < len)
     {
-        num[i] = new Random().Next(0, 10);
+        num[i] = new Random().Next(-10, 10);
         i++;
     }
 }
@@ -25,13 +25,23 @@ void findsum(int[] array)
 {
     int len = array.Length;
     int i = 0;
-    int sum = 0;
+    int sumplus = 0;
+    int summinus = 0;
     while (i < len)
     {
-        sum += array[i];
+        if (array[i] > 0)
+        {
+        
+            sumplus += array[i];
+            i++;
+        }
+        else if (array[i] < 0)
+        {
+        summinus += array[i];
         i++;
+        }
     }
-    Console.WriteLine($"Сумма элементов равна {sum}");
+    Console.WriteLine($"Сумма положительных элементов равна {sumplus} и сумма отрицательных элементов равна {summinus}");
 }
 int[] array = new int[12];
 fillarray(array);
