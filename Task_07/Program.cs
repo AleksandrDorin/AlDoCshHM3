@@ -22,7 +22,7 @@ void unevensum(int[] element)
     int sum = 0;
     for (int i = 0; i < element.Length; i++)
     {
-        if(i % 2 == 0)
+        if(i % 2 != 0)
         {
             sum += element[i];
         }
