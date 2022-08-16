@@ -22,7 +22,7 @@ void findelement(int[] element)
     int count = 0;
     for (int i = 0; i < element.Length; i++)
     {
-        if (element[i] > 10 && element[i] < 100)
+        if (element[i] >= 10 && element[i] <= 99)
         {
             count += 1;
         }
